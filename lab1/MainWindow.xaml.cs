@@ -24,5 +24,9 @@ namespace lab1
         {
             InitializeComponent();
         }
+        private void CreateDynamicButton()
+        {
+
+        }
     }
 }
