@@ -34,19 +34,28 @@ namespace lab1
         {
             double upperbound = Convert.ToDouble(tbUpperBound.Text);
             double lowerbound = Convert.ToDouble(tbLowerBound.Text);
-            
+            double partcount = Convert.ToInt16(tbPartCount.Text);
+            Integrate(lowerbound, upperbound, partcount);
+
         }
-        
-        // Функкция f(x)
+
+        // Функция f(x)
         private static double F(double x)
         {
             return 7 * x - Math.Log(7 * x) + 8;
         }
 
-        private static double Integrate(double upperbound, double lowerbound, double F)
+        private static double Integrate(double lowerbound, double upperbound, double partcount)
         {
-           
-
+            double partlength = (upperbound - lowerbound) / partcount;
+            double answer = 0;
+            double x0 = lowerbound;
+            for (int i = 0; i < partcount; i++)
+            {
+                x0 += partlength;
+                answer += F(x0 + (partlength / 2));
+            }
+            return answer;
         }
     }
 }
