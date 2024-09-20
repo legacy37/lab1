@@ -36,5 +36,17 @@ namespace lab1
             double lowerbound = Convert.ToDouble(tbLowerBound.Text);
             
         }
+        
+        // Функкция f(x)
+        private static double F(double x)
+        {
+            return 7 * x - Math.Log(7 * x) + 8;
+        }
+
+        private static double Integrate(double upperbound, double lowerbound, double F)
+        {
+           
+
+        }
     }
 }
