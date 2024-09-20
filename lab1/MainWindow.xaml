@@ -12,6 +12,8 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
 
@@ -30,5 +32,10 @@
         <TextBox Name="tbPartCount" Grid.Row="3" Grid.Column="2" Margin="3" ></TextBox>
         <Button Name="btnCalculate" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Click="btnCalculate_Click">Посчитать</Button>
         <TextBlock Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Right">Ответ: </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="4">Метод ср. пр-ов</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="5">Метод трапеций</TextBlock>
+        <TextBox Name="ansRect" Grid.Row="2" Grid.Column="4"></TextBox>
+        <TextBox Name="ansTrap" Grid.Row="2" Grid.Column="5"></TextBox>
+
     </Grid>
 </Window>
