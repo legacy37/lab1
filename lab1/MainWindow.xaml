@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Евдокимов 3-47" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
         
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">Верхний предел</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">Нижний предел</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">Количество разбиений</TextBlock>
+        <TextBox Name="tbUpperBound" Grid.Row="1" Grid.Column="2" Margin="3"></TextBox>
+        <TextBox Name="tbLowerBound" Grid.Row="2" Grid.Column="2" Margin="3" ></TextBox>
+        <TextBox Name="tbPartCount" Grid.Row="3" Grid.Column="2" Margin="3" ></TextBox>
+        <Button Name="btnCalculate" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Click="btnCalculate_Click">Посчитать</Button>
     </Grid>
 </Window>

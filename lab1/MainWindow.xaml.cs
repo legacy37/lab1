@@ -26,7 +26,15 @@ namespace lab1
         }
         private void Update1()
         {
+            //Comment
+            //Comment
+        }
 
+        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            double upperbound = Convert.ToDouble(tbUpperBound.Text);
+            double lowerbound = Convert.ToDouble(tbLowerBound.Text);
+            
         }
     }
 }
