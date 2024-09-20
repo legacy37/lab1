@@ -35,8 +35,8 @@ namespace lab1
             double upperbound = Convert.ToDouble(tbUpperBound.Text);
             double lowerbound = Convert.ToDouble(tbLowerBound.Text);
             double partcount = Convert.ToInt16(tbPartCount.Text);
-            IntegrateRect(lowerbound, upperbound, partcount);
-            IntegrateTrap(lowerbound, upperbound, partcount);
+            ansRect.Text=Convert.ToString(IntegrateRect(lowerbound, upperbound, partcount));
+            ansTrap.Text=Convert.ToString(IntegrateTrap(lowerbound, upperbound, partcount));
         }
 
         // Функция f(x)
