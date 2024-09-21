@@ -23,6 +23,7 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
+			<RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">Верхний предел</TextBlock>
         <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">Нижний предел</TextBlock>
@@ -36,6 +37,7 @@
         <TextBlock Grid.Row="1" Grid.Column="5">Метод трапеций</TextBlock>
         <TextBox Name="ansRect" Grid.Row="2" Grid.Column="4"></TextBox>
         <TextBox Name="ansTrap" Grid.Row="2" Grid.Column="5"></TextBox>
+		<TextBlock Grid.Row="6" Grid.Column="1" VerticalAlignment="Center">Влад, прости за этот беспредел</TextBlock>
 
     </Grid>
 </Window>
