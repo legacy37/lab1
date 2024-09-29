@@ -23,6 +23,8 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">Верхний предел</TextBlock>
         <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">Нижний предел</TextBlock>
@@ -36,6 +38,9 @@
         <TextBlock Grid.Row="1" Grid.Column="5">Метод трапеций</TextBlock>
         <TextBox Name="ansRect" Grid.Row="2" Grid.Column="4"></TextBox>
         <TextBox Name="ansTrap" Grid.Row="2" Grid.Column="5"></TextBox>
+        <TextBlock Grid.Row="5" Grid.Column="1" FontSize="14" HorizontalAlignment="Center">Анекдот</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="2" FontSize="14" HorizontalAlignment="Center" Margin="0,-3,0,0">армянский спортсмен занял на олимпиаде</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="2" FontSize="14" HorizontalAlignment="Center" Margin="0,9,0,0">по 300 рублей</TextBlock>
 
     </Grid>
 </Window>
