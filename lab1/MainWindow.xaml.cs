@@ -34,9 +34,11 @@ namespace lab1
         {
             double upperbound = Convert.ToDouble(tbUpperBound.Text);
             double lowerbound = Convert.ToDouble(tbLowerBound.Text);
-            double partcount = Convert.ToInt16(tbPartCount.Text);
-            ansRect.Text=Convert.ToString(IntegrateRect(lowerbound, upperbound, partcount));
-            ansTrap.Text=Convert.ToString(IntegrateTrap(lowerbound, upperbound, partcount));
+            int partcount = Convert.ToInt16(tbPartCount.Text);
+            IntegrateRect resh = new IntegrateRect();
+            IntegrateTrap trap = new IntegrateTrap();
+            ansRect.Text = Convert.ToString(resh.Resh(F,upperbound,lowerbound,partcount));
+            ansTrap.Text = Convert.ToString(trap.Resh(F, upperbound, lowerbound, partcount));
         }
 
         // Функция f(x)
@@ -46,7 +48,7 @@ namespace lab1
         }
 
         // Метод средних прямоугольников
-        private static double IntegrateRect(double lowerbound, double upperbound, double partcount)
+        /*private static double IntegrateRect(double lowerbound, double upperbound, double partcount)
         {
             double partlength = (upperbound - lowerbound) / partcount;
             double answer = 0;
@@ -58,10 +60,10 @@ namespace lab1
             }
             answer *= partlength;
             return answer;
-        }
+        }*/
         
         // Метод трапеций
-        private static double IntegrateTrap(double lowerbound, double upperbound, double partcount)
+        /*private static double IntegrateTrap(double lowerbound, double upperbound, double partcount)
         {
             double partlength = (upperbound - lowerbound) / partcount;
             double answer = 0;
@@ -74,6 +76,6 @@ namespace lab1
             answer += (F(upperbound) + F(lowerbound)) / 2;
             answer *= partlength;
             return answer;
-        }
+        }*/
     }
 }
