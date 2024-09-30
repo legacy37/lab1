@@ -47,35 +47,18 @@ namespace lab1
             return 7 * x - Math.Log(7 * x) + 8;
         }
 
-        // Метод средних прямоугольников
-        /*private static double IntegrateRect(double lowerbound, double upperbound, double partcount)
+        private hhhh GetCalculator()
         {
-            double partlength = (upperbound - lowerbound) / partcount;
-            double answer = 0;
-            double x0 = lowerbound;
-            for (int i = 0; i < partcount; i++)
+            switch (cmbBoxIntegralType.SelectedIndex)
             {
-                x0 += partlength;
-                answer += F(x0 + (partlength / 2));
+                case 0:
+                    return new SimpsonCalculator();
+                case 1:
+                    return new TrapCalculator();
+                default:
+                    return new SimpsonCalculator();
             }
-            answer *= partlength;
-            return answer;
-        }*/
-        
-        // Метод трапеций
-        /*private static double IntegrateTrap(double lowerbound, double upperbound, double partcount)
-        {
-            double partlength = (upperbound - lowerbound) / partcount;
-            double answer = 0;
-            double x0 = lowerbound;
-            for (int i = 0; i < partcount; i++)
-            {
-                x0 += partlength;
-                answer += F(x0);
-            }
-            answer += (F(upperbound) + F(lowerbound)) / 2;
-            answer *= partlength;
-            return answer;
-        }*/
+
+        }
     }
 }
