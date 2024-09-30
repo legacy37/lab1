@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab1"
         mc:Ignorable="d"
-        Title="Евдокимов В.П. 3-47" Height="450" Width="800">
+        Title="Евдокимов В.П. 3-47" Height="450" Width="800" Background=" green">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -41,7 +41,7 @@
         <TextBox Grid.Column="3" Grid.Row="3">Верни сотку мою</TextBox>
         <TextBlock Grid.Row="6" Grid.Column="1"> Метод рассчёта</TextBlock>
         <ComboBox Name="cmbBoxIntegralType" Margin="10 0 0 0" Grid.Row="7"  Grid.Column="2">
-            <ComboBoxItem>Метод Симпсона</ComboBoxItem>
+            <ComboBoxItem>Метод прямоугольников</ComboBoxItem>
             <ComboBoxItem>Метод трапеции</ComboBoxItem>
         </ComboBox>
 
